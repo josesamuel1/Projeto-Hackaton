@@ -23,7 +23,7 @@ public class MenuCadastro {
             DataUsers.adicionarUsuario(user);
 
         } catch (Exception e) {
-            System.out.println("Algum problema de digitação encontrado. Voltando pra tela inicial...");
+            System.out.println("Algum problema encontrado. Voltando pra tela inicial...");
         }
     }
 }

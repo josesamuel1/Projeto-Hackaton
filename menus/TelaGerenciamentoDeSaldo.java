@@ -2,32 +2,36 @@ package menus;
 
 import java.util.Scanner;
 
-import data.*;
+import data.Usuario;
 
-public class TelaInicial {
+public class TelaGerenciamentoDeSaldo {
     public static void showMenu(Usuario user) {
         Scanner input = new Scanner(System.in);
-
-        System.out.println("Bem vindo, " + user.getNome() + "!");
+        MenuInterfaces.getLimpaTela();
 
         int sair = 0;
         while (sair == 0) {
             try {
-                // Mostra o menu da tela inicial do programa.
-                System.out.print(MenuInterfaces.getTelaInicial());
+                System.out.print(MenuInterfaces.getTelaGerenciamentoDeSaldo());
                 int opcao = Integer.parseInt(input.nextLine());
 
                 switch (opcao) {
-                    case 1 -> { // Tela de Perfil
-                        TelaPerfil.showMenu(user);
+                    case 1 -> { // Alterar saldo
+                        System.out.println("Saldo atual: " + user.getSaldoTotal());
+
+                        System.out.print("Digite um novo valor para seu saldo:\n> RS");
+                        double novoSaldo = input.nextDouble();
+                        user.setSaldoTotal(novoSaldo);
+
+                        System.out.println("Novo saldo alterado com sucesso para: " + user.getSaldoTotal());
                     }
 
-                    case 2 -> { // Gerenciamento de saldo
-                        TelaGerenciamentoDeSaldo.showMenu(user);
+                    case 2 -> { // Ver saldo disponível
+                        System.out.println("Seu saldo disponível é de RS" + user.getSaldoDisponivel());
                     }
 
-                    case 3 -> { // Gerenciamento de cofrinhos
-                        TelaGerenciamentoDeCofrinhos.showMenu(user);
+                    case 3 -> {
+                        System.out.println("CASO 3");
                     }
 
                     case 4 -> {
@@ -42,8 +46,7 @@ public class TelaInicial {
                         System.out.println("CASO 6");
                     }
 
-                    case 7 -> {
-                        System.out.println("Saindo da conta...");
+                    case 7 -> { // Voltar
                         sair = -1;
                     }
 

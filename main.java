@@ -5,6 +5,7 @@ import menus.*;
 public class main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        MenuInterfaces.getLimpaTela();
 
         int sair = 0;
         while (sair == 0) {
@@ -15,11 +16,13 @@ public class main {
                 switch (opcao) {
                     // Login
                     case 1 -> {
+                        MenuInterfaces.getLimpaTela();
                         MenuLogin.showMenu();
                     }
 
                     // Cadastro
                     case 2 -> {
+                        MenuInterfaces.getLimpaTela();
                         MenuCadastro.showMenu();
                     }
 

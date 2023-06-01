@@ -3,7 +3,6 @@ package menus;
 import java.util.Scanner;
 
 import data.*;
-import menus.TelaInicial;
 
 public class MenuLogin {
     static Scanner input = new Scanner(System.in);
@@ -19,6 +18,7 @@ public class MenuLogin {
 
             for (Usuario usuario : DataUsers.getUsuarios()) {
                 if (usuario.getEmail().equals(email) && usuario.getSenha().equals(senha)) {
+                    MenuInterfaces.getLimpaTela();
                     TelaInicial.showMenu(usuario);
                     usuarioNull = true;
                 } else {
@@ -31,7 +31,7 @@ public class MenuLogin {
             }
 
         } catch (Exception e) {
-            System.out.println("Algum problema de digitação encontrado. Voltando pra tela inicial...");
+            System.out.println("Algum problema encontrado. Voltando pra tela inicial...");
         }
     }
 }

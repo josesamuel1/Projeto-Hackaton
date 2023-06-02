@@ -30,10 +30,7 @@ public class MenuInterfaces {
             |  1  |  Tela de Perfil         |
             |  2  |  Gerenciar saldo        |
             |  3  |  Gerenciar cofrinhos    |
-            |  4  |  CASO 4                 |
-            |  5  |  CASO 5                 |
-            |  6  |  CASO 6                 |
-            |  7  |  Sair                   |
+            |  4  |  Sair                   |
             +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
             >\s""";
 
@@ -41,11 +38,7 @@ public class MenuInterfaces {
             +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
             |  1  |  Alterar saldo          |
             |  2  |  Ver saldo disponível   |
-            |  3  |  CASO 3                 |
-            |  4  |  CASO 4                 |
-            |  5  |  CASO 5                 |
-            |  6  |  CASO 6                 |
-            |  7  |  Voltar                 |
+            |  3  |  Voltar                 |
             +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
             >\s""";
 

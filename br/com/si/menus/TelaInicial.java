@@ -2,13 +2,13 @@ package br.com.si.menus;
 
 import java.util.Scanner;
 
-import br.com.si.data.Usuario;
 import br.com.si.data.*;
 
 /**
  * A classe TelaInicial representa a tela inicial do programa, onde são exibidas
  * as opções de menu para o usuário. Permite a navegação para outras telas,
- * como a tela de perfil, gerenciamento de saldo, gerenciamento de cofrinhos, etc.
+ * como a tela de perfil, gerenciamento de saldo, gerenciamento de cofrinhos,
+ * etc.
  */
 public class TelaInicial {
 
@@ -44,18 +44,6 @@ public class TelaInicial {
                     }
 
                     case 4 -> {
-                        System.out.println("CASO 4");
-                    }
-
-                    case 5 -> {
-                        System.out.println("CASO 5");
-                    }
-
-                    case 6 -> {
-                        System.out.println("CASO 6");
-                    }
-
-                    case 7 -> {
                         System.out.println("Saindo da conta...");
                         sair = -1;
                     }

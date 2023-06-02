@@ -2,7 +2,7 @@ package br.com.si.menus;
 
 import java.util.Scanner;
 
-import br.com.si.data.Usuario;
+import br.com.si.data.*;
 
 /**
  * Classe responsável por exibir o menu de gerenciamento de saldo do usuário.
@@ -45,23 +45,7 @@ public class TelaGerenciamentoDeSaldo {
                         System.out.println("Seu saldo disponível é de RS" + user.getSaldoDisponivel());
                     }
 
-                    case 3 -> {
-                        System.out.println("CASO 3");
-                    }
-
-                    case 4 -> {
-                        System.out.println("CASO 4");
-                    }
-
-                    case 5 -> {
-                        System.out.println("CASO 5");
-                    }
-
-                    case 6 -> {
-                        System.out.println("CASO 6");
-                    }
-
-                    case 7 -> { // Voltar
+                    case 3 -> { // Voltar
                         sair = -1;
                     }
 

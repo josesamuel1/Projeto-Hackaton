@@ -25,7 +25,13 @@ public class MenuCadastro {
             System.out.print("Senha: ");
             String senha = input.nextLine();
 
-            Usuario user = new Usuario(nome, email, senha);
+            System.out.print("CPF: ");
+            String cpf = input.nextLine();
+
+            System.out.println("Telefone: ");
+            String cel = input.nextLine();
+
+            Usuario user = new Usuario(nome, email, senha, cpf, cel);
             DataUsers.adicionarUsuario(user);
 
         } catch (Exception e) {

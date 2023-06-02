@@ -10,21 +10,25 @@ import java.util.ArrayList;
 
 public class Usuario {
     // Características
-    private String nome, email, senha;
+    private String nome, email, senha, cpf, celular;
     private double saldoTotal, saldoDisponivel;
     private ArrayList<Cofrinho> cofrinhos = new ArrayList<Cofrinho>();
 
     /**
      * Construtor da classe Usuario.
-     *
-     * @param nome O nome do usuário.
-     * @param email O endereço de e-mail do usuário.
-     * @param senha A senha do usuário.
+     * 
+     * @param nome    O nome do usuário.
+     * @param email   O endereço de e-mail do usuário.
+     * @param senha   A senha do usuário.
+     * @param cpf     O cpf do usuário.
+     * @param celular O número de celular do usuário.
      */
-    public Usuario(String nome, String email, String senha) {
+    public Usuario(String nome, String email, String senha, String cpf, String celular) {
         this.nome = nome;
         this.email = email;
         this.senha = senha;
+        this.cpf = cpf;
+        this.celular = celular;
     }
 
     /**
@@ -73,6 +77,42 @@ public class Usuario {
      */
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    /**
+     * Obtém o cpf do usuário.
+     *
+     * @return O cpf do usuário.
+     */
+    public String getCpf() {
+        return cpf;
+    }
+
+    /**
+     * Define o cpf do usuário.
+     *
+     * @param cpf O novo cpf do usuário.
+     */
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
+    /**
+     * Obtém o cpf do usuário.
+     *
+     * @return O cpf do usuário.
+     */
+    public String getCelular() {
+        return celular;
+    }
+
+    /**
+     * Define o celular do usuário.
+     *
+     * @param celular O novo celular do usuário.
+     */
+    public void setCelular(String celular) {
+        this.celular = celular;
     }
 
     /**

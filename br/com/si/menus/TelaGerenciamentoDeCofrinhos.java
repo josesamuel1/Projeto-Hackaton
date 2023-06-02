@@ -2,12 +2,11 @@ package br.com.si.menus;
 
 import java.util.Scanner;
 
-import br.com.si.data.Cofrinho;
-import br.com.si.data.Usuario;
 import br.com.si.data.*;
 
 /**
- * Classe responsável por exibir o menu de gerenciamento de cofrinhos do usuário.
+ * Classe responsável por exibir o menu de gerenciamento de cofrinhos do
+ * usuário.
  */
 public class TelaGerenciamentoDeCofrinhos {
 
@@ -25,10 +24,10 @@ public class TelaGerenciamentoDeCofrinhos {
             try {
                 // Mostra o menu de gerenciamento da tela de cofrinhos
                 System.out.print(MenuInterfaces.getTelaGerenciamentoDeCofrinhos());
-                String opcao = input.nextLine();
+                int opcao = Integer.parseInt(input.nextLine());
 
                 switch (opcao) {
-                    case "1" -> { // Ver cofrinhos
+                    case 1 -> { // Ver cofrinhos
                         // Caso o usuário não possua cofrinhos
                         if (user.getCofrinhos().isEmpty()) {
                             System.out.println("O usuário não possui cofrinhos.");
@@ -48,7 +47,7 @@ public class TelaGerenciamentoDeCofrinhos {
                         }
                     }
 
-                    case "2" -> { // Criar novo cofrinho
+                    case 2 -> { // Criar novo cofrinho
                         System.out.print("Nome do cofrinho:\n> ");
                         String nome = input.nextLine();
 
@@ -84,7 +83,7 @@ public class TelaGerenciamentoDeCofrinhos {
                         }
                     }
 
-                    case "3" -> { // Alterar cofrinhos
+                    case 3 -> { // Alterar cofrinhos
                         // Caso o usuário não possua cofrinhos.
                         if (user.getCofrinhos().isEmpty()) {
                             System.out.println("O usuário não possui cofrinhos.");
@@ -116,7 +115,21 @@ public class TelaGerenciamentoDeCofrinhos {
 
                                     System.out.print("Novo saldo:\n> RS");
                                     double novoSaldo = input.nextDouble();
-                                    user.alterarSaldoDisponivel(-novoSaldo);
+
+                                    int cond = 0;
+                                    while (cond == 0) {
+                                        if (novoSaldo > user.getSaldoDisponivel()) {
+                                            System.out.println("Saldo investido maior do que o disponível.");
+                                        } else {
+                                            /*
+                                             * O saldo disponível decresce em "saldoDisponível" e é
+                                             * acrescentado o mesmo valor em "saldoGuardado" no cofrinho e,
+                                             * também, o novo cofrinho é adicionado na lista de cofrinhos do usuário
+                                             */
+                                            user.alterarSaldoDisponivel(-novoSaldo);
+                                            cond = -1;
+                                        }
+                                    }
                                     user.getCofrinhos().get(i).setSaldoGuardado(novoSaldo);
 
                                     System.out.println("Dados do cofrinho alterados com sucesso.");
@@ -128,7 +141,7 @@ public class TelaGerenciamentoDeCofrinhos {
                         }
                     }
 
-                    case "4" -> { // Excluir cofrinho
+                    case 4 -> { // Excluir cofrinho
                         // Caso o usuário possua cofrinhos.
                         if (user.getCofrinhos().isEmpty()) {
                             System.out.println("O usuário não possui cofrinhos.");
@@ -156,7 +169,7 @@ public class TelaGerenciamentoDeCofrinhos {
                         }
                     }
 
-                    case "5" -> { // Voltar
+                    case 5 -> { // Voltar
                         sair = -1;
                     }
 

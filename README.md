@@ -21,7 +21,14 @@ A Secretária Inteligente é para aquelas pessoas que estão procurando ter um m
 
 ## Funcionalidades do Projeto :hammer:
 
-## Tecnologias Utilizadas
+`Algumas de suas funções são:`
+
+- Criar um fundo emergencial para que o usuário em alguma situação inesperada, tenha uma fonte de renda que possa utilizar.
+- Organizar viagens, o app irá te ajudar a juntar a quantia necessária até o dia da viagem.
+- Cria um fundo para custos fixos, para garantir que internet, aluguel e outros custos fixos, separando o dinheiro do montante restante para que o usuário o utilize assim for necessário.
+- Na parte de investimento o aplicativo indicaria ao usuário utilizar uma quantia de 10% do restante do dinheiro para investir.
+
+## Tecnologias Utilizadas 🖥
 
 - Java
 - Figma

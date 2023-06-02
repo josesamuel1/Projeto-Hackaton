@@ -10,23 +10,36 @@
 
 Este projeto faz parte da 2ª edição do ADS Experience, onde o objetivo é criar soluções inovadoras para problemas específicos ou simplesmente experimentar novas tecnologias e ideias. O tema desta edição é "Oportunidades e desafios da integração dos mundos físico e digital".
 
-## Secretária Inteligente 📱
+## Secretaria Inteligente 📱
 
 <p align="center" >
-     <img width="300" heigth="300" src="https://github.com/josesamuel1/Projeto-Hackaton/assets/95758069/90ef419a-3256-4598-843a-6465524705ee">
+     <img src="https://github.com/josesamuel1/Projeto-Hackaton/assets/95758069/c240a3e6-b612-4c3e-87d6-9b5f8285fdd7">
 </p>
 
-A Secretária Inteligente é para aquelas pessoas que estão procurando ter um melhor controle financeiro e que estão em busca de maneiras inteligentes de investir seu dinheiro. No aplicativo você também pode agendar reuniões e atividades. Tudo isso com uma interface simples e muito fácil de utilizar.
+
+A Secretaria Inteligente é para aquelas pessoas que estão procurando ter um melhor controle financeiro e que estão em busca de maneiras inteligentes de investir seu dinheiro. No aplicativo você também pode agendar reuniões e atividades. Tudo isso com uma interface simples e muito fácil de utilizar.
  
 
 ## Funcionalidades do Projeto :hammer:
 
+<p align="center" >
+     <img src="https://github.com/josesamuel1/Projeto-Hackaton/assets/95758069/22ae9c79-7ccf-48aa-b231-87da9bdf5775">
+</p>
+
 `Algumas de suas funções são:`
 
+- Funciona como uma carteira virtual, onde você pode ter um controle financeiro.
+- Você pode criar "cofrinhos" para separar o seu dinheiro.
 - Criar um fundo emergencial para que o usuário em alguma situação inesperada, tenha uma fonte de renda que possa utilizar.
 - Organizar viagens, o app irá te ajudar a juntar a quantia necessária até o dia da viagem.
-- Cria um fundo para custos fixos, para garantir que internet, aluguel e outros custos fixos, separando o dinheiro do montante restante para que o usuário o utilize assim for necessário.
-- Na parte de investimento o aplicativo indicaria ao usuário utilizar uma quantia de 10% do restante do dinheiro para investir.
+- Criar um fundo para custos fixos, para garantir que internet, aluguel e outros custos, tenham o dinheiro separado para a hora do pagamento.
+- Na parte de investimentos o aplicativo indicaria ao usuário utilizar uma quantia de 10% do montante do dinheiro para investir e algumas ações que podem ser do interesse dele de acordo com seu perfil de investidor.
+- Planejar viagens.
+- Agendar eventos e reuniões.
+
+<p align="center" >
+     <img src="https://github.com/josesamuel1/Projeto-Hackaton/assets/95758069/bb03f8b0-5f46-4b48-b34a-409229145eb0">
+</p>
 
 ## Tecnologias Utilizadas 🖥
 

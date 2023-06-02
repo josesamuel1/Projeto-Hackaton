@@ -1,10 +1,21 @@
-package menus;
+package br.com.si.menus;
 
 import java.util.Scanner;
 
-import data.*;
+import br.com.si.data.Cofrinho;
+import br.com.si.data.Usuario;
+import br.com.si.data.*;
 
+/**
+ * Classe responsável por exibir o menu de gerenciamento de cofrinhos do usuário.
+ */
 public class TelaGerenciamentoDeCofrinhos {
+
+    /**
+     * Exibe o menu de gerenciamento de cofrinhos do usuário.
+     *
+     * @param user O objeto de usuário que representa o usuário atual.
+     */
     public static void showMenu(Usuario user) {
         Scanner input = new Scanner(System.in);
         MenuInterfaces.getLimpaTela();

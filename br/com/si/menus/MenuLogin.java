@@ -1,13 +1,21 @@
-package menus;
+package br.com.si.menus;
 
 import java.util.Scanner;
 
-import data.*;
+import br.com.si.data.DataUsers;
+import br.com.si.data.Usuario;
+import br.com.si.data.*;
 
+/**
+ * Classe responsável por exibir o menu de login e autenticar os usuários.
+ */
 public class MenuLogin {
     static Scanner input = new Scanner(System.in);
     private static boolean usuarioNull = false;
 
+    /**
+     * Exibe o menu de login e realiza a autenticação do usuário.
+     */
     public static void showMenu() {
         try {
             System.out.print("Email: ");

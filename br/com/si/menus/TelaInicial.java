@@ -1,10 +1,23 @@
-package menus;
+package br.com.si.menus;
 
 import java.util.Scanner;
 
-import data.*;
+import br.com.si.data.Usuario;
+import br.com.si.data.*;
 
+/**
+ * A classe TelaInicial representa a tela inicial do programa, onde são exibidas
+ * as opções de menu para o usuário. Permite a navegação para outras telas,
+ * como a tela de perfil, gerenciamento de saldo, gerenciamento de cofrinhos, etc.
+ */
 public class TelaInicial {
+
+    /**
+     * Exibe o menu da tela inicial e permite ao usuário navegar para outras telas
+     * do programa.
+     *
+     * @param user o objeto Usuario associado à sessão atual
+     */
     public static void showMenu(Usuario user) {
         Scanner input = new Scanner(System.in);
 

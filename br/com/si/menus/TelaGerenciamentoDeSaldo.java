@@ -1,10 +1,25 @@
-package menus;
+package br.com.si.menus;
 
 import java.util.Scanner;
 
-import data.Usuario;
+import br.com.si.data.Usuario;
 
+/**
+ * Classe responsável por exibir o menu de gerenciamento de saldo do usuário.
+ */
 public class TelaGerenciamentoDeSaldo {
+
+    /**
+     * Exibe o menu de gerenciamento de saldo do usuário.
+     * O método exibe um menu com opções relacionadas ao saldo do usuário,
+     * como alterar o saldo e ver o saldo disponível. O usuário pode escolher
+     * uma opção digitando o número correspondente. O método realiza as ações
+     * de acordo com a opção selecionada e exibe mensagens adequadas.
+     * Caso seja selecionada a opção "Voltar", o loop é interrompido e o usuário
+     * retorna ao menu anterior.
+     *
+     * @param user O objeto de usuário que representa o usuário atual.
+     */
     public static void showMenu(Usuario user) {
         Scanner input = new Scanner(System.in);
         MenuInterfaces.getLimpaTela();

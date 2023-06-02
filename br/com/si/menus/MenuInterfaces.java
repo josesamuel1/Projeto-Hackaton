@@ -1,6 +1,14 @@
-package menus;
+package br.com.si.menus;
 
+/**
+ * Classe que contém as interfaces de usuário utilizadas pelo programa.
+ */
 public class MenuInterfaces {
+    /**
+     * Limpa a tela exibindo várias linhas em branco.
+     *
+     * @return 0.
+     */
     private static int limpaTela() {
         for (int i = 0; i <= 50; i++) {
             System.out.println();
@@ -51,27 +59,47 @@ public class MenuInterfaces {
             +-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-+
             >\s""";
 
-    /*
-     * -----------------------------------------------------------------------------
+    /**
+     * Obtém o menu inicial.
+     *
+     * @return O menu inicial.
      */
-
-    // Getters
     public static String getMenuInicial() {
         return menuInicial;
     }
 
+    /**
+     * Obtém a tela inicial.
+     *
+     * @return A tela inicial.
+     */
     public static String getTelaInicial() {
         return telaInicial;
     }
 
+    /**
+     * Obtém a tela de gerenciamento de saldo.
+     *
+     * @return A tela de gerenciamento de saldo.
+     */
     public static String getTelaGerenciamentoDeSaldo() {
         return telaGerenciamentoDeSaldo;
     }
 
+    /**
+     * Obtém a tela de gerenciamento de cofrinhos.
+     *
+     * @return A tela de gerenciamento de cofrinhos.
+     */
     public static String getTelaGerenciamentoDeCofrinhos() {
         return telaGerenciamentoDeCofrinhos;
     }
 
+    /**
+     * Executa a ação de limpar a tela.
+     *
+     * @return O valor 0.
+     */
     public static int getLimpaTela() {
         return limpaTela();
     }

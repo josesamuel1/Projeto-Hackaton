@@ -1,13 +1,19 @@
-package menus;
+package br.com.si.menus;
 
 import java.util.Scanner;
 
-import data.DataUsers;
-import data.Usuario;
+import br.com.si.data.DataUsers;
+import br.com.si.data.Usuario;
 
+/**
+ * Classe que representa o menu de cadastro de usuários.
+ */
 public class MenuCadastro {
     static Scanner input = new Scanner(System.in);
 
+    /**
+     * Exibe o menu de cadastro de usuários.
+     */
     public static void showMenu() {
         try {
             System.out.print("Nome completo: ");

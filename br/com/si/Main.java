@@ -1,8 +1,22 @@
+package br.com.si;
+
 import java.util.Scanner;
 
-import menus.*;
+import br.com.si.menus.MenuCadastro;
+import br.com.si.menus.MenuInterfaces;
+import br.com.si.menus.MenuLogin;
+import br.com.si.menus.*;
 
-public class main {
+/**
+ * Classe principal que inicia a execução do programa e exibe o menu inicial.
+ */
+public class Main {
+
+    /**
+     * Método principal que é executado quando o programa é iniciado.
+     *
+     * @param args os argumentos de linha de comando
+     */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         MenuInterfaces.getLimpaTela();
